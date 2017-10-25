@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171025050659) do
+ActiveRecord::Schema.define(version: 20171025135116) do
 
   create_table "computers", force: :cascade do |t|
     t.date "purchase_date"
@@ -30,6 +30,13 @@ ActiveRecord::Schema.define(version: 20171025050659) do
     t.text "city"
     t.text "us_state"
     t.integer "zip_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "departments", force: :cascade do |t|
+    t.text "department_name"
+    t.float "expense_budget"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

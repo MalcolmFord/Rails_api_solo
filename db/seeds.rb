@@ -11,6 +11,11 @@ Customer.create!([
   {last_name: "Ford", first_name: "Malcolm", date_customer_created: nil, active: true, last_date_used: nil, email: "brooke.wittenberg@gmail.com", street_address: "1414 Monetta Ave", city: "Nashville", us_state: "TN", zip_code: 37216},
   {last_name: "Ford", first_name: "Malcolm", date_customer_created: nil, active: true, last_date_used: nil, email: "brooke.wittenberg@gmail.com", street_address: "1414 Monetta Ave", city: "Nashville", us_state: "TN", zip_code: 37216}
 ])
+Department.create!([
+  {department_name: "HR", expense_budget: 2000.0},
+  {department_name: "HR", expense_budget: 2000.0},
+  {department_name: "HR", expense_budget: 2000.0}
+])
 Order.create!([
   {Customer_id: 1, Payment_type_id: 1},
   {Customer_id: 3, Payment_type_id: 3},
