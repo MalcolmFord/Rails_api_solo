@@ -35,3 +35,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# This allows us to create a seed file from data already in the database
+gem 'seed_dump', '~> 3.2', '>= 3.2.4'
+
+# I still need to do a bundle install!!!
+# CORS
+gem 'rack-cors', '~> 1.0', '>= 1.0.2'
